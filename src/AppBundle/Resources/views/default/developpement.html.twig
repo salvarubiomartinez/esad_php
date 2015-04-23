@@ -1,0 +1,66 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block title %}
+    | Developpement
+{% endblock %}
+
+{% block page %}id="page2"{% endblock %}
+
+{% block body %}
+    <article id="content" class="tabs">
+        <div class="wrapper">
+            <div class="box1">
+                <div class="wrapper">
+                    <section class="">
+                        <h2 class=color3 id="Devel"><strong>D</strong>éveloppement</h2>
+
+                        <div class="">
+                            <figure class="left marg_right1">
+                                <div align="justify"><img src="{{ asset('images/page2_img3.jpg') }}" alt=""></div>
+                            </figure>
+                            <p align="justify">Dotée d'infrastructures précaires, l'Afrique de l'Ouest est une des
+                                régions les plus pauvres du monde. En ce qui concerne plus particulièrement le Sénégal,
+                                il faut savoir qu'il s'agit d'un pays n'ayant quasiment pas de richesses naturelles. Les
+                                principales sources de revenus pour le pays sont le tourisme et la pêche, depuis que la
+                                crise de l'arachide a détrôné l'agriculture comme facteur de croissance. Mais mis à part
+                                la pauvreté, les infrastructures précaires du Sénégal ne permettent pas de s'adapter aux
+                                aléas climatiques typiques d'une zone tropicale. Cela fait que lors de la saison des
+                                pluies, de nombreux quartiers sont littéralement inondés, ce qui provoque l'apparition
+                                de maladies, empêche la vie normale et coupe court à tout développement humain positif.
+                            </p>
+
+                            <p align="justify">D'après l'ONU, dans son <a target="_blank"
+                                                                          href="http://www.who.int/gho/countries/sen.pdf?ua=1">
+                                    Enquête Myworld 2015 au Sénégal </a> réalisée dans le cadre de son Programme de
+                                Développement, les contraintes les plus importantes empêchant la satisfaction des
+                                besoins de subsistance sont : le manque d'argent, l'absence d'emploi ou le sous-emploi,
+                                la dépendance et la difficulté d'accès au financement.
+                            </p>
+
+                            <p align="justify">Ainsi, en aidant ces populations, nous désirons apporter notre grain de
+                                sable pour que l'Afrique émerge au niveau économique et devienne une terre où la qualité
+                                de vie soit équiparable à celle d'autres pays du monde, car tout le monde a droit à une
+                                vie digne.
+                            </p>
+                            <a href="{{ path('notre_mission') }}" class="button1 color3">Retour</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper">
+                <h3>Notre Mission</h3>
+
+                <p align="justify" class="quot"> L'Association "Education, Santé et Aide au Développement"(ESAD) est une
+                    association déclarée Loi 1901 dont les objectifs principaux sont d'apporter une aide et un soutien
+                    aux populations les plus vulnérables en leur donnant accès à l'Education, à la Santé et au
+                    Développement.<img src="{{ asset('images/quot2.png') }}" alt=""></p>
+            </div>
+        </div>
+
+    </article>
+{% endblock %}
+{#{% block javascripts %}
+    <script type="text/javascript">Cufon.now(); tabs.init();</script>
+{% endblock %}#}

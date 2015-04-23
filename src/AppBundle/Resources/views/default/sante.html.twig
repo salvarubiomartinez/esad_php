@@ -1,0 +1,77 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block title %}
+    | Sante
+{% endblock %}
+
+{% block page %}id="page2"{% endblock %}
+
+{% block body %}
+    <article id="content" class="tabs">
+        <div class="wrapper">
+            <div class="box1">
+                <div class="wrapper">
+                    <section class="">
+                        <h2 class=color2 id="Sante"><strong>S</strong>anté</h2>
+
+                        <div class="">
+                            <figure class="left marg_right1">
+                                <div align="justify"><img src="{{ asset('images/page2_img2.jpg') }}" alt=""></div>
+                            </figure>
+                            <p align="justify">Nulle société ne peut prospérer sans avoir un accès adéquat aux soins
+                                médicaux. Le Sénégal est malheureusement un pays où le taux de mortalité ne fait que
+                                révéler les grandes carences existant dans le domaine médical et sanitaire. Les causes
+                                de morbidité les plus importantes sont : le paludisme, les parasitoses, les dermatoses
+                                et les affections respiratoires. De plus, le taux de mortalité infantile,
+                                infanto-juvénile et maternelle sont assez élevés.
+                            </p>
+
+                            <p align="justify">Les défis à relever pour améliorer les conditions de santé en Afrique de
+                                l'Ouest sont les suivants:
+                            </p>
+
+                            <p align="justify">- Eduquer dans le sens d'une bonne hygiène de vie en enseignant par la
+                                pratique les règles élémentaires de la propreté. Dans ce domaine entre aussi la question
+                                de la gestion des ordures, qui pose avant tout un problème de santé publique et non pas
+                                d'urbanisme ou de gestion commununale.
+                            </p>
+
+                            <p align="justify">- La démocratisation de l'accès aux soins en facilitant cet accès surtout
+                                aux populations rurales ou éloignées de la capitale, qui souvent ne peuvent être suivies
+                                par des spécialistes que s'ils font le déplacement coûteux et parfois physiquement
+                                impossible vers la capitale.
+                            </p>
+
+                            <p align="justify">- L'apport de matériel médical qui permettra aux structures médicales
+                                déjà existantes de fonctionner d'une meilleure façon et de proposer d'autres services ou
+                                des services plus complets que ce qu'ils offrent déjà.
+                            </p>
+
+                            <p align="justify">Voici <a target="_blank"
+                                                        href="http://www.fundacioferreruela.com/img/PresentacioSistema_Sanitari_Senegal.pdf">
+                                    le Rapport sur la situation sanitaire au Sénégal en 2005</a> et <a target="_blank"
+                                                                                                       href="http://www.who.int/gho/countries/sen.pdf?ua=1">
+                                    le Profil du Sénégal par l'OMS</a> (Organisation Mondiale de la Santé).
+                            </p>
+                            <a href="{{ path('notre_mission') }}" class="button1 color3">Retour</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper">
+                <h3>Notre Mission</h3>
+
+                <p align="justify" class="quot"> L'Association "Education, Santé et Aide au Développement"(ESAD) est une
+                    association déclarée Loi 1901 dont les objectifs principaux sont d'apporter une aide et un soutien
+                    aux populations les plus vulnérables en leur donnant accès à l'Education, à la Santé et au
+                    Développement.<img src="{{ asset('images/quot2.png') }}" alt=""></p>
+            </div>
+        </div>
+
+    </article>
+{% endblock %}
+{#{% block javascripts %}
+    <script type="text/javascript">Cufon.now(); tabs.init();</script>
+{% endblock %}#}

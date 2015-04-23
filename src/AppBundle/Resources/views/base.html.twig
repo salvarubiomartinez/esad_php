@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ESAD {% block title %}{% endblock %}</title>
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" href="{{ asset('css/layout.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all">
+    {% endblock %}
+
+    <script type="text/javascript" src="{{ asset('js/jquery-1.6.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/cufon-yui.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/cufon-replace.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/Vegur_700.font.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/Vegur_400.font.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/Vegur_300.font.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/tms-0.3.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/tms_presets.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/backgroundPosition.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/atooltip.jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/tabs.js') }}"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="{{ asset('js/html5.js') }}"></script>
+    <style type="text/css">.box1 figure {
+        behavior: url("{{ asset('js/PIE.htc') }}");
+    }</style>
+    <![endif]-->
+
+</head>
+<body {% block page %}{% endblock %}>
+
+
+<div class="body1">
+    <div class="main">
+        <!-- header -->
+        <header>
+            <div class="wrapper">
+                <h1><a href="{{ path('homepage') }}" id="logo">ESAD</a></h1>
+                <nav>
+                    <ul id="top_nav">
+                        <li><a href="{{ path('homepage') }}"><img src="{{ asset('images/top_icon1.gif') }}" alt=""></a>
+                        </li>
+                        <li><a href="#"><img src="{{ asset('images/top_icon2.gif') }}" alt=""></a></li>
+                        <li class="end"><a href="{{ path('contact') }}"><img src="{{ asset('images/top_icon3.gif') }}"
+                                                                             alt=""></a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul id="menu">
+                        <li id="{% if app.request.attributes.get('_route') == 'homepage' %}menu_active{% endif %}"><a
+                                    href="{{ path('homepage') }}">Accueil</a></li>
+                        <li id="{% if app.request.attributes.get('_route') == 'notre_mission' or app.request.attributes.get('_route') == 'education' or app.request.attributes.get('_route') == 'sante' or app.request.attributes.get('_route') == 'developpement' %}menu_active{% endif %}">
+                            <a href="{{ path('notre_mission') }}">Notre Mission</a></li>
+                        <li id="{% if app.request.attributes.get('_route') == 'actions' %}menu_active{% endif %}"><a
+                                    href="{{ path('actions') }}">Actions</a></li>
+                        <li id="{% if app.request.attributes.get('_route') == 'aider' %}menu_active{% endif %}"><a
+                                    href="{{ path('aider') }}">Aider</a></li>
+                        <li id="{% if app.request.attributes.get('_route') == 'contact' %}menu_active{% endif %}"><a
+                                    href="{{ path('contact') }}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            {% block header %}{% endblock %}
+        </header>
+        <!-- / header -->
+
+        {% block body %}{% endblock %}
+
+
+        <!-- / content -->
+        <!-- footer -->
+        <footer>
+
+
+            <div class="wrapper">
+                <div class="box2">
+                    <div class="wrapper">
+                        <section class="line1">
+                            <div class="wrapper">
+                                <div align="justify"><a href="{{ path('aider') }}" class="left marg_right1"><img
+                                                src="{{ asset('images/banner.jpg') }}" alt=""></a>
+                                </div>
+                                <p align="justify" class="pad_bot2"><strong>Comment donner en toute s&eacute;curit&eacute;
+                                        ?</strong></p>
+
+                                <p align="justify" class="mod1">A travers notre plateforme de paiement sécurisée à 100%,
+                                    vous pouvez réaliser vos dons en toute tranquillité. Et sachez que grâce à notre
+                                    politique de transparence, vous pouvez savoir à tout moment où va votre argent.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper"><a href="{{ path('homepage') }}" id="footer_logo"><span>ESAD</span> ong</a>
+                <ul id="icons">
+                    <li><a href="http://www.facebook.com/pages/ESAD/499840843481423?ref=bookmarks"
+                           class="normaltip"><img src="{{ asset('images/icon1.gif') }}" alt=""></a></li>
+                    <li><a href="#" class="normaltip"><img src="{{ asset('images/icon2.gif') }}" alt=""></a></li>
+                    <li><a href="#" class="normaltip"><img src="{{ asset('images/icon3.gif') }}" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <nav>
+                    <ul id="footer_menu">
+                        <li class="{% if app.request.attributes.get('_route') == 'homepage' %}active{% endif %}"><a
+                                    href="{{ path('homepage') }}">Accueil</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'notre_mission' or app.request.attributes.get('_route') =='education' or app.request.attributes.get('_route') == 'sante' or app.request.attributes.get('_route') == 'developpement' %}active{% endif %}">
+                            <a href="{{ path('notre_mission') }}">Notre Mission</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'actions' %}active{% endif %}"><a
+                                    href="{{ path('actions') }}">Actions</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'aider' %}active{% endif %}"><a
+                                    href="{{ path('aider') }}">Aider</a></li>
+                        <li class="end {% if app.request.attributes.get('_route') == 'contact' %}active{% endif %}"><a
+                                    href="{{ path('contact') }}">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="tel"><span>+33 </span>612 09 05 19</div>
+            </div>
+            <div id="footer_text">Copyright &copy; <a href="#">www.esad.org</a> Tous droits r&eacute;serv&eacute;s<br>
+                Con&ccedil;u par <a target="_blank" href="http://www.esad.org/">ESAD</a></div>
+        </footer>
+        <!-- / footer -->
+    </div>
+</div>
+
+{% block javascripts %}
+    <script type="text/javascript">Cufon.now();</script>
+{% endblock %}
+</body>
+</html>

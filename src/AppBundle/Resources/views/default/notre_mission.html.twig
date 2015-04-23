@@ -1,0 +1,63 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block title %}
+    | Notre mission
+{% endblock %}
+
+{% block page %}id="page2"{% endblock %}
+
+{% block body %}
+    <article id="content">
+        <div class="wrapper">
+            <div class="box1">
+                <div class="line1">
+                    <div class="line2 wrapper">
+                        <section class="col1">
+                            <h2><strong>E</strong>ducation</h2>
+
+                            <div class="pad_bot1">
+                                <figure><img src="{{ asset('images/page2_img1.jpg') }}" alt=""></figure>
+                            </div>
+                            <div align="justify">ESAD a pour but la scolarisation de nombreux élèves qui vivent dans des
+                                conditions très difficiles, parce que la construction viable de l'avenir passe
+                                nécessairement par l'éducation et la formation des jeunes générations. <a
+                                        href="{{ path('education') }}" class="button1">Suite</a></div>
+                        </section>
+                        <section class="col1 pad_left1">
+                            <h2 class="color2"><strong>S</strong>anté</h2>
+
+                            <div class="pad_bot1">
+                                <figure><img src="{{ asset('images/page2_img2.jpg') }}" alt=""></figure>
+                            </div>
+                            <div align="justify">ESAD a pour but de faciliter l'accès aux soins médicaux des populations
+                                les plus démunies en offrant du matériel médical de base, car nulle société ne peut se
+                                construire sans respecter des règles d'hygiène et de santé élémentaires. <a
+                                        href="{{ path('sante') }}" class="button1 color2">Suite</a></div>
+                        </section>
+                        <section class="col1 pad_left1">
+                            <h2 class="color3"><strong>D</strong>&eacute;veloppement</h2>
+
+                            <div class="pad_bot1">
+                                <figure><img src="{{ asset('images/page2_img3.jpg') }}" alt=""></figure>
+                            </div>
+                            <div align="justify">ESAD contribue au développement de l'Afrique en endigant l'exode rural
+                                et l'émigration à l'étranger, et en favorisant l'insertion professionnelle dans le
+                                milieu d'origine, parce que nul pays ne peut se construire en se vidant de ses
+                                habitants.<a href="{{ path('developpement') }}" class="button1 color3">Suite</a></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper">
+                <h3>Notre Mission</h3>
+
+                <p align="justify" class="quot"> L'Association "Education, Santé et Aide au Développement"(ESAD) est une
+                    association déclarée Loi 1901 dont les objectifs principaux sont d'apporter une aide et un soutien
+                    aux populations les plus vulnérables en leur donnant accès à l'Education, à la Santé et au
+                    Développement.<img src="{{ asset('images/quot2.png') }}" alt=""></p>
+            </div>
+        </div>
+    </article>
+{% endblock %}

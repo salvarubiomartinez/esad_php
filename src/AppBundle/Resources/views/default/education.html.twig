@@ -1,0 +1,78 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block title %}
+    | Education
+{% endblock %}
+
+{% block page %}id="page2"{% endblock %}
+
+{% block body %}
+    <article id="content" class="tabs">
+        <div class="wrapper">
+            <div class="box1">
+                <div class="wrapper">
+                    <section class="">
+                        <h2 id="Education"><strong>E</strong>ducation</h2>
+
+                        <div class="">
+                            <figure class="left marg_right1">
+                                <div align="justify"><img src="{{ asset('images/page2_img1.jpg') }}" alt=""></div>
+                            </figure>
+                            <p align="justify">L'éducation est un pilier de nos sociétés. Sans éducation, les jeunes
+                                générations sont privées d'un accès au marché du travail, ce qui les condamne au chômage
+                                forcé. Après des années de malvivre, la plupart d'entre eux finissent par émigrer vers
+                                l'Europe dans des conditions extrêmement difficiles. Ils traversent l'Afrique du Nord,
+                                puis la Mer Méditerranée pour accéder à des pays qu'ils tiennent pour l'Eldorado, mais
+                                qui révèlent vite leur visage. Le lot de beaucoup d'immigrés africains en Europe est
+                                plutôt de l'ordre du cauchemar. Ils se retrouvent souvent à dormir dehors ou dans des
+                                abris de fortune, malnourris, ils tombent parfois dans la drogue ou la déliquence,
+                                devenant ainsi un problème pour leur sociétés d'accueil.
+                            </p>
+
+                            <p align="justify">Face à ces problèmes, nous considérons qu'il faut traiter le problème à
+                                la source. Si ces jeunes avaient eu l'occasion de suivre une formation qualifiante, leur
+                                avenir ne serait pas en Europe, mais chez eux, où ils pourraient apporter la richesse de
+                                leur savoir-faire aux gens qui les ont formés et pris en charge.</p>
+
+                            <p align="justify">L'éducation en Afrique de l'Ouest est un vaste sujet, car il relève du
+                                phénomène bien connu des Talibés. En Afrique de l'Ouest, le système éducatif est encore
+                                très souvent structuré selon un mode d'organisation et d'enseigmenent traditionnel, qui
+                                avec l'apparition de la modernité, a sombré dans l'exploitation pure et simple des
+                                enfants. Ce phénomène d'une ampleur préoccuppante a été largement étudié par de
+                                nombreuses organisations, comme Human Rightts Watch, dont voici <a target="_blank"
+                                                                                                   href="http://www.hrw.org/sites/default/files/reports/senegal0314fr_ForUpload_0.pdf">
+                                    le Rapport sur les Talibés</a>.
+                            </p>
+
+                            <p align="justify">A partir d'ESAD, nous essayons de promouvoir une éducation respectueuse
+                                du milieu traditionnel et culturel où elle se diffuse, car la plupart des actions
+                                éducatives menées à partir d'Europe ont malheureusement échoué lorsqu'elles n'on pas
+                                pris en compte la spécificité de la culture locale. Nous croyons donc qu'il faut
+                                réformer l'enseignement tout en respectant sa singularité. C'est pourquoi nous avons le
+                                projet de construire des écoles où les enfants puissent suivre un enseigmenent
+                                traditionnel (apprentissage du Coran) et moderne (français, anglais, mathématiques,
+                                informatique), pour qu'ils puissent s'intégrer au marché du travail d'un monde en pleine
+                                mutation.
+                            </p>
+                            <a href="{{ path('notre_mission') }}" class="button1 color3">Retour</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper">
+                <h3>Notre Mission</h3>
+
+                <p align="justify" class="quot"> L'Association "Education, Santé et Aide au Développement"(ESAD) est une
+                    association déclarée Loi 1901 dont les objectifs principaux sont d'apporter une aide et un soutien
+                    aux populations les plus vulnérables en leur donnant accès à l'Education, à la Santé et au
+                    Développement.<img src="{{ asset('images/quot2.png') }}" alt=""></p>
+            </div>
+        </div>
+
+    </article>
+{% endblock %}
+{#{% block javascripts %}
+    <script type="text/javascript">Cufon.now(); tabs.init();</script>
+{% endblock %}#}

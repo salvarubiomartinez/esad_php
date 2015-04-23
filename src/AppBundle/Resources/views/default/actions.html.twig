@@ -1,0 +1,65 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block title %}
+    | Actions
+{% endblock %}
+
+{% block page %}id="page3"{% endblock %}
+
+{% block body %}
+    <article id="content" class="tabs">
+        <div class="wrapper">
+            <div class="box1">
+                <div class="wrapper">
+                    <section class="col1">
+                        <h2><strong>H</strong>istorique<span> de nos actions</span></h2>
+
+                        <div class="line1">
+                            <figure class="left marg_right1">
+                                <div align="justify"><img src="{{ asset('images/page3_img1.jpg') }}" alt=""></div>
+                            </figure>
+                            <p align="justify" class="pad_bot1">Sous l'impulsion de son Président d'Honneur, le Shaykh
+                                Mahy Cisse, l'Association ESAD a été créée en 2012 par des femmes et des hommes
+                                d'origine sénégalaise vivant en France. Aujourd'hui, elle compte 165 membres en Europe
+                                et au Sénégal. </p>
+
+                            <p align="justify" class="pad_bot1">Dans le cadre de ses missions, ESAD réalise plusieurs
+                                activités au Sénégal et en France : éducation, offre de matériel médical, activités
+                                agricoles, distribution de vivres, aide aux sinistrés lors des inondations, collecte de
+                                vêtements et de chaussures, etc. </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <ul class="nav">
+                {% for i in year %}
+                    <li {% if any ==i.1 %}class="selected"{% endif %}><a href="#{{ i.1 }}">{{ i.1 }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="box2">
+                {% for i in year %}
+                    <div class="wrapper tab-content" id="{{ i.1 }}">
+                        <section class="col1">
+                            {% for action in actions if action.date|date('Y') == i.1 %}
+
+                                <h4 class="{{ cycle([null,'color2','color3'],loop.index0) }}">{{ action.jourEtMois }} <span>{{ action.date |date('Y') }}</span></h4>
+                                <p class="colo3"><strong>{{ action.titre }}</strong></p>
+                                <div class="mod1">{{ action.corps |raw }}</div>
+
+                            {% endfor %}
+                        </section>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </article>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript">Cufon.now();
+        tabs.init();</script>
+{% endblock %}

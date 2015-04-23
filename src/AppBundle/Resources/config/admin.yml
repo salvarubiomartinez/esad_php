@@ -1,0 +1,18 @@
+services:
+    sonata.admin.action:
+        class: AppBundle\Admin\ActionAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Action" }
+        arguments:
+            - ~
+            - AppBundle\Entity\Action
+            - ~
+        calls:
+            - [ setTranslationDomain, [AcmeDemoBundle]]
+
+    app.admin.action:
+        class: AppBundle\Admin\ActionAdmin
+        arguments: [~, AppBundle\Entity\Action, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Action}
+

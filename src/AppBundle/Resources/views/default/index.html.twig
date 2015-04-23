@@ -1,0 +1,180 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block title %}
+    | Accueil
+{% endblock %}
+
+
+
+{% block header %}
+    <div class="slider">
+        <ul class="items">
+            <li><img src="{{ asset('images/img1.jpg') }}" alt="">
+
+                <div class="banner">
+                    <div class="wrapper"><span>“Notre mission est d'aider</span></div>
+                    <div class="wrapper"><strong>tous ceux qui en ont besoin&rdquo;</strong></div>
+                </div>
+            </li>
+            <li><img src="{{ asset('images/img2.jpg') }}" alt="">
+
+                <div class="banner">
+                    <div class="wrapper"><span>“Faire que les gens</span></div>
+                    <div class="wrapper"><strong>soient heureux&rdquo;</strong></div>
+                </div>
+            </li>
+            <li><img src="{{ asset('images/img3.jpg') }}" alt="">
+
+                <div class="banner">
+                    <div class="wrapper"><span>“Ensemble nous pouvons changer</span></div>
+                    <div class="wrapper"><strong>le cours de nombreuses vies&rdquo;</strong></div>
+                </div>
+            </li>
+        </ul>
+        <ul class="pagination">
+            <li id="banner1"><a href="#">Faire<span>un Don</span></a></li>
+            <li id="banner2"><a href="#">Etre<span>Volontaire</span></a></li>
+            <li id="banner3"><a href="#">Alerter<span>les autres</span></a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block page %}id="page1"{% endblock %}
+
+{% block body %}
+    <article id="content">
+        <div class="wrapper">
+            <div class="box1">
+                <div class="line1">
+                    <div class="line2 wrapper">
+                        <section class="col1">
+                            <h2><strong>E</strong>ducation<span></span></h2>
+
+                            <div class="pad_bot1">
+                                <figure><img src="{{ asset('images/page1_img1.jpg') }}" alt=""></figure>
+                            </div>
+                            <div align="justify">ESAD a pour but la scolarisation de nombreux élèves qui vivent dans des
+                                conditions très difficiles, parce que la construction viable de l'avenir passe
+                                nécessairement par l'éducation et la formation des jeunes générations. <a
+                                        href="{{ path('education') }}" class="button1">Suite</a></div>
+                        </section>
+                        <section class="col1 pad_left1">
+                            <h2 class="color2"><strong>S</strong>anté<span></span></h2>
+
+                            <div class="pad_bot1">
+                                <figure><img src="{{ asset('images/page1_img2.jpg') }}" alt=""></figure>
+                            </div>
+                            <div align="justify">ESAD a pour but de faciliter l'accès aux soins médicaux des populations
+                                les plus démunies en offrant du matériel médical de base, car nulle société ne peut se
+                                construire sans respecter des règles d'hygiène et de santé élémentaires. <a
+                                        href="{{ path('sante') }}" class="button1 color2">Suite</a></div>
+                        </section>
+                        <section class="col1 pad_left1">
+                            <h2 class="color3"><strong>D</strong>éveloppement<span></span></h2>
+
+                            <div class="pad_bot1">
+                                <figure><img src="{{ asset('images/page1_img3.jpg') }}" alt=""></figure>
+                            </div>
+                            <div align="justify">ESAD contribue au développement de l'Afrique en endigant l'exode rural
+                                et l'émigration à l'étranger, et en favorisant l'insertion professionnelle dans le
+                                milieu d'origine, parce que nul pays ne peut se construire en se vidant de ses
+                                habitants.
+                            </div>
+                            <div align="justify"><a href="{{ path('developpement') }}" class="button1 color3">Suite</a></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h3>Notre Mission</h3>
+
+            <p align="justify" class="quot"> L'Association "Education, Sant&eacute; et Aide au D&eacute;veloppement"
+                (ESAD) est une association d&eacute;clar&eacute;e Loi 1901 dont les objectifs principaux sont d'apporter
+                une aide et un soutien aux populations les plus vuln&eacute;rables en leur donnant acc&egrave;s &agrave;
+                l'Education, &agrave; la Sant&eacute; et au D&eacute;veloppement.<img src="{{ asset('images/quot2.png') }}" alt=""></p>
+        </div>
+        <div class="wrapper">
+            <div class="box2">
+                <div class="line1">
+                    <div class="line2 wrapper">
+                        <section class="col1">
+                            <h4>Année<span> 2013</span></h4>
+
+                            <p class="pad_bot2"><strong>Année de l'agriculture</strong></p>
+
+                            <p align="justify" class="mod1">Activités agricoles et distribution de bétail pour la fête
+                                de Tabaski ont été nos actions principales.</p>
+                            <a href="{{ path('actions') }}/2013" class="button2">Suite</a></section>
+                        <section class="col1 pad_left1">
+                            <h4 class="color2">Année<span> 2014</span></h4>
+
+                            <p class="pad_bot2"><strong>Année de l'action solidaire</strong></p>
+
+                            <p align="justify" class="mod1">Distribution de bétail pour la fête de Tabaski et collecte
+                                de vêtements ont été nos activités principales.</p>
+                            <a href="{{ path('actions') }}/2014" class="button2 color2">Suite</a></section>
+                        <section class="col1 pad_left1">
+                            <h4 class="color3">Année <span>2015</span></h4>
+
+                            <p class="pad_bot2"><strong>Année médicale</strong></p>
+
+                            <p align="justify" class="mod1">Le projet médical est pour l'instant notre principale
+                                acticité cette année, à côtés de bien d'autres !</p>
+                            <a href="{{ path('actions') }}/2015" class="button2 color3">Suite</a></section>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </article>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.slider')._TMS({
+                preset: 'zabor',
+                easing: 'easeOutQuad',
+                duration: 800,
+                pagination: true,
+                banners: true,
+                waitBannerAnimation: false,
+                slideshow: 6000,
+                bannerShow: function (banner) {
+                    banner.css({
+                        right: '-700px'
+                    }).stop().animate({
+                        right: '0'
+                    }, 600, 'easeOutExpo')
+                },
+                bannerHide: function (banner) {
+                    banner.stop().animate({
+                        right: '-700'
+                    }, 600, 'easeOutExpo')
+                }
+            })
+            $('.pagination li').hover(function () {
+                if (!$(this).hasClass('current')) {
+                    $(this).find('a').stop().animate({
+                        backgroundPosition: '0 0'
+                    }, 600, 'easeOutExpo', function () {
+                        $(this).parent().css({
+                            backgroundPosition: '-20px 0'
+                        })
+                    });
+                }
+            }, function () {
+                if (!$(this).hasClass('current')) {
+                    $(this).css({
+                        backgroundPosition: '0 0'
+                    }).find('a').stop().animate({
+                        backgroundPosition: '-250px 0'
+                    }, 600, 'easeOutExpo');
+                }
+            })
+        })
+    </script>
+{% endblock %}
