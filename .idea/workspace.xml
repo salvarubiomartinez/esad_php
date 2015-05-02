@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a28048-8f6f-44b1-a144-adc75af692f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/page3_img1.jpg" afterPath="$PROJECT_DIR$/web/images/page3_img1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/actions.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/actions.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/aider.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/aider.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/developpement.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/developpement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/education.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/education.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/sante.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/default/sante.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="esad.iws" />
@@ -123,8 +116,8 @@
       <file leaf-file-name="actions.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/default/actions.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32697546" vertical-offset="0" max-vertical-offset="1050">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.47002724" vertical-offset="0" max-vertical-offset="1050">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -568,7 +561,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430579843870</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="correciones">
+      <created>1430581498348</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1430581498348</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -617,7 +616,8 @@
     <MESSAGE value="limpieza de basura" />
     <MESSAGE value="logo" />
     <MESSAGE value="color fondo" />
-    <option name="LAST_COMMIT_MESSAGE" value="color fondo" />
+    <MESSAGE value="correciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="correciones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -996,8 +996,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/default/actions.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32697546" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.47002724" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
