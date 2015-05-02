@@ -86,8 +86,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41556728" vertical-offset="6825" max-vertical-offset="9375">
-              <caret line="476" column="29" selection-start-line="476" selection-start-column="29" selection-end-line="476" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.52506596" vertical-offset="6727" max-vertical-offset="9360">
+              <caret line="475" column="25" selection-start-line="475" selection-start-column="25" selection-end-line="475" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -435,7 +435,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430579321636</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="color fondo">
+      <created>1430579441383</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1430579441384</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -852,8 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41556728" vertical-offset="6825" max-vertical-offset="9375">
-          <caret line="476" column="29" selection-start-line="476" selection-start-column="29" selection-end-line="476" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.52506596" vertical-offset="6727" max-vertical-offset="9360">
+          <caret line="475" column="25" selection-start-line="475" selection-start-column="25" selection-end-line="475" selection-end-column="25" />
           <folding />
         </state>
       </provider>

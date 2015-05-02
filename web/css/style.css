@@ -18,8 +18,7 @@ mark, rp, rt, ruby, summary, time {
 }
 /* Global properties ======================================================== */
 body {
-	/*background:url(../images/bg.jpg) top center repeat;*/
-    background-color: #F0FFFF;
+	background:url(../images/bg.jpg) top center repeat;
 	border:0;
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color:#666666;
@@ -474,7 +473,7 @@ header {
 /* ============================= footer ====================== */
 footer {
 	/*background:#9ecf39;*/
-    background-color: #A9E2F3;
+    background-color: #6cd6af;
 	padding:21px 36px 44px
 }
 #footer_logo {
