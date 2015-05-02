@@ -472,8 +472,8 @@ header {
 }
 /* ============================= footer ====================== */
 footer {
-	/*background:#9ecf39;*/
-    background-color: #6cd6af;
+	background:#9ecf39;
+    /*background-color: #6cd6af;*/
 	padding:21px 36px 44px
 }
 #footer_logo {
